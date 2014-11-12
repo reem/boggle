@@ -45,5 +45,13 @@ describe("boggle", function () {
       'ill'
     ])
   });
+
+  it("should work with 'qu'", function () {
+    expect(boggle([
+      ['e', 'qu', 'a'],
+      ['k', 'z', 'l'],
+      ['g', 'f', 'd']
+    ])).to.contain('equal');
+  });
 });
 
