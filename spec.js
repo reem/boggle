@@ -1,4 +1,4 @@
-var boggle = require('./boggle.js').boggle;
+var boggle = require('./src').boggle;
 var expect = require('chai').expect;
 
 describe("boggle", function () {
