@@ -12,7 +12,6 @@ module.exports = function () {
     // do this just once and not under load.
     var dictionary = fs.readFileSync(DICTIONARY_FILE, { encoding: "utf-8" });
   } catch (e) {
-    console.error("Error reading dictionary: %s", e);
     return null;
   }
 

@@ -21,6 +21,7 @@ var Boggle = function (board) {
 //
 //  Returns: [String] - all possible words on this board
 Boggle.prototype.solve = function () {
+  if (!dictionary) { throw new Error("Dictionary could not be loaded."); }
   // Start with no words.
   var words = new Set([]);
 
