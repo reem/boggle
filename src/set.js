@@ -1,6 +1,6 @@
 var Set = function (elements) {
   this._items = toObject(elements);
-  this._len = elements.len;
+  this._len = elements.length;
 };
 
 Set.prototype.contains = function (elem) {
